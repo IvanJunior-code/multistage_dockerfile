@@ -11,6 +11,6 @@ func hello(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", hello)
-	fmt.Println("Servidor rodando! http://localhost:8080")
+	fmt.Println("Servidor em execução.")
 	http.ListenAndServe(":8080", nil)
 }
